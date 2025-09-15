@@ -1,0 +1,8 @@
+onRatas = True
+kasSajab = True
+temp = int(input("Tänane temperatuur (Täisarvuna): "))
+
+if onRatas and (not kasSajab or temp > 15):
+    print("Tänane trenn toimub rattaga!")
+else:
+    print("Täna ei saa trenni teha!")

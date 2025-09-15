@@ -1,0 +1,13 @@
+sammu_pikkus_str = input("Sisestage sammu pikkus meetrites (ujukomaarv): ")
+sammu_pikkus = float(sammu_pikkus_str)
+
+
+labitav_vahemaa_str = input("Sisestage läbitav vahemaa meetrites (täisarv): ")
+labitav_vahemaa = int(labitav_vahemaa_str)
+
+
+sammude_arv = labitav_vahemaa / sammu_pikkus
+
+
+umbardatud_sammude_arv = round(sammude_arv)
+print(f"Tehtavate sammude arv on: {umbardatud_sammude_arv}")

@@ -1,0 +1,19 @@
+arv1 = int(input("Sisesta esimene täisarv: "))
+tehe = input("Sisesta tehe (+, -, *, /): ")
+arv2 = int(input("Sisesta teine täisarv: "))
+
+if tehe == "+":
+    tulemus = arv1 + arv2
+    print("Tulemus:", tulemus)
+elif tehe == "-":
+    tulemus = arv1 - arv2
+    print("Tulemus:", tulemus)
+elif tehe == "*":
+    tulemus = arv1 * arv2
+    print("Tulemus:", tulemus)
+elif tehe == "/":
+    if arv2 == 0:
+        print("Nulliga ei saa jagada.")
+    else:
+        tulemus = arv1 / arv2
+        print("Tulemus:", tulemus)

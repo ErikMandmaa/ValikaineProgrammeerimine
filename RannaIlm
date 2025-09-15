@@ -1,0 +1,8 @@
+temp = int(input("Sisesta välistemperatuur (täisarv): "))
+päike = input("Kas päike paistab? (jah/ei): ").lower()
+roheline_lipp = input("Kas on roheline lipp? (jah/ei): ").lower()
+
+if roheline_lipp == "jah" or (temp >= 20 and päike == "jah"):
+    print("Võid minna randa!")
+else:
+    print("Täna ei tasu randa minna.")

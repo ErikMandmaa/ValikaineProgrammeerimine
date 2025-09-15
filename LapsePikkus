@@ -1,0 +1,12 @@
+ema_pikkus = int(input("Sisesta ema pikkus sentimeetrites: "))
+isa_pikkus = int(input("Sisesta isa pikkus sentimeetrites: "))
+laps_sugu = input('Sisesta lapse sugu ("M" poiss, "N" tüdruk): ')
+
+if laps_sugu.lower() == "m":
+    eeldatav_pikkus = (ema_pikkus + isa_pikkus + 13) / 2
+    print(f"Lapse eeldatav pikkus on {eeldatav_pikkus:.1f} cm")
+elif laps_sugu.lower() == "n":
+    eeldatav_pikkus = (ema_pikkus + isa_pikkus - 13) / 2
+    print(f"Lapse eeldatav pikkus on {eeldatav_pikkus:.1f} cm")
+else:
+    print("Vigane sisestus lapse soo kohta.")
